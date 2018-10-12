@@ -221,7 +221,6 @@ p:hover {
 }
 .carousel .img-hover .text-overlay {
   padding: 5px;
-  color: white;
   font-family: "IBM Plex Mono", monospace;
   font-size: 15px;
   position: absolute;
@@ -229,6 +228,9 @@ p:hover {
   left: 0;
   display: none;
   transition: 0.5s ease;
+}
+.carousel .img-hover .text-overlay p {
+  color: white;
 }
 .carousel .img-hover .text-overlay .date {
   font-size: 10px;
