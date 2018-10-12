@@ -7,7 +7,6 @@ footer {
     .footer-cont {
         display: flex;
         justify-content: space-around;
-        color: $color-font;
         border-bottom: $color-font solid 1px;
         width: 88%;
         margin: auto;
@@ -17,6 +16,8 @@ footer {
             padding-bottom: 1em;
             i {
                 padding-right: 8px;
+                color: $color-font;
+                text-decoration: none;
             }
         }
     }
@@ -47,6 +48,10 @@ footer {
         }
         .footer-icon2 {
             display: flex;
+            a {
+                color: $color-font;
+                text-decoration: none;
+            }
         }
 
     }
