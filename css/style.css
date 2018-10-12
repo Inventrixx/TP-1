@@ -496,5 +496,365 @@ p {
     display: none;
   }
 }
+footer, header {
+  /* make sure to set some focus styles for accessibility */
+  /* HTML5 display-role reset for older browsers */
+  /**
+   * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+   */
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  /**
+   * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+   * Known issue: no IE 6 support.
+   */
+  /**
+   * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+   *    `em` units.
+   * 2. Prevent iOS text size adjust after orientation change, without disabling
+   *    user zoom.
+   */
+  /**
+   * Address `outline` inconsistency between Chrome and other browsers.
+   */
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+  /**
+   * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+   * 2. Improve image quality when scaled in IE 7.
+   */
+  /**
+   * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+   */
+  /**
+   * Correct margin displayed oddly in IE 6/7.
+   */
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  /**
+   * 1. Correct color not being inherited in IE 6/7/8/9.
+   * 2. Correct text not wrapping in Firefox 3.
+   * 3. Correct alignment displayed oddly in IE 6/7.
+   */
+  /**
+   * 1. Correct font size not being inherited in all browsers.
+   * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+   *    and Chrome.
+   * 3. Improve appearance and consistency in all browsers.
+   */
+  /**
+   * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+   * Correct `select` style inheritance in Firefox 4+ and Opera.
+   */
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+   *    Known issue: inner spacing remains in IE 6.
+   */
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  /**
+   * 1. Address box sizing set to content-box in IE 8/9.
+   * 2. Remove excess padding in IE 8/9.
+   * 3. Remove excess padding in IE 7.
+   *    Known issue: excess padding remains in IE 6.
+   */
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  /**
+   * Remove inner padding and search cancel button in Safari 5 and Chrome
+   * on OS X.
+   */
+  /**
+   * Remove inner padding and border in Firefox 3+.
+   */
+  /**
+   * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+   * 2. Improve readability and alignment in all browsers.
+   */
+  /**
+   * Remove most spacing between table cells.
+   */
+}
+footer html, footer body, footer div, footer span, footer applet, footer object, footer iframe,
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre,
+footer a, footer abbr, footer acronym, footer address, footer big, footer cite, footer code,
+footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer s, footer samp,
+footer small, footer strike, footer strong, footer sub, footer sup, footer tt, footer var,
+footer b, footer u, footer i, footer center,
+footer dl, footer dt, footer dd, footer ol, footer ul, footer li,
+footer fieldset, footer form, footer label, footer legend,
+footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td,
+footer article, footer aside, footer canvas, footer details, footer embed,
+footer figure, footer figcaption, footer footer, footer header, footer hgroup,
+footer menu, footer nav, footer output, footer ruby, footer section, footer summary,
+footer time, footer mark, footer audio, footer video, header html, header body, header div, header span, header applet, header object, header iframe,
+header h1, header h2, header h3, header h4, header h5, header h6, header p, header blockquote, header pre,
+header a, header abbr, header acronym, header address, header big, header cite, header code,
+header del, header dfn, header em, header img, header ins, header kbd, header q, header s, header samp,
+header small, header strike, header strong, header sub, header sup, header tt, header var,
+header b, header u, header i, header center,
+header dl, header dt, header dd, header ol, header ul, header li,
+header fieldset, header form, header label, header legend,
+header table, header caption, header tbody, header tfoot, header thead, header tr, header th, header td,
+header article, header aside, header canvas, header details, header embed,
+header figure, header figcaption, header footer, header header, header hgroup,
+header menu, header nav, header output, header ruby, header section, header summary,
+header time, header mark, header audio, header video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer :focus, header :focus {
+  outline: 0;
+}
+footer article, footer aside, footer details, footer figcaption, footer figure,
+footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, header article, header aside, header details, header figcaption, header figure,
+header footer, header header, header hgroup, header menu, header nav, header section {
+  display: block;
+}
+footer body, header body {
+  line-height: 1;
+}
+footer ol, footer ul, header ol, header ul {
+  list-style: none;
+}
+footer blockquote, footer q, header blockquote, header q {
+  quotes: none;
+}
+footer blockquote:before, footer blockquote:after,
+footer q:before, footer q:after, header blockquote:before, header blockquote:after,
+header q:before, header q:after {
+  content: "";
+  content: none;
+}
+footer table, header table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+footer input[type=search]::-webkit-search-cancel-button,
+footer input[type=search]::-webkit-search-decoration,
+footer input[type=search]::-webkit-search-results-button,
+footer input[type=search]::-webkit-search-results-decoration, header input[type=search]::-webkit-search-cancel-button,
+header input[type=search]::-webkit-search-decoration,
+header input[type=search]::-webkit-search-results-button,
+header input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+footer input[type=search], header input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+footer textarea, header textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+footer audio,
+footer canvas,
+footer video, header audio,
+header canvas,
+header video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+footer audio:not([controls]), header audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+footer [hidden], header [hidden] {
+  display: none;
+}
+footer html, header html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+footer a:focus, header a:focus {
+  outline: thin dotted;
+}
+footer a:active,
+footer a:hover, header a:active,
+header a:hover {
+  outline: 0;
+}
+footer img, header img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+footer figure, header figure {
+  margin: 0;
+}
+footer form, header form {
+  margin: 0;
+}
+footer fieldset, header fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+footer legend, header legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+footer button,
+footer input,
+footer select,
+footer textarea, header button,
+header input,
+header select,
+header textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+footer button,
+footer input, header button,
+header input {
+  line-height: normal;
+}
+footer button,
+footer select, header button,
+header select {
+  text-transform: none;
+}
+footer button,
+footer html input[type=button],
+footer input[type=reset],
+footer input[type=submit], header button,
+header html input[type=button],
+header input[type=reset],
+header input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+footer button[disabled],
+footer html input[disabled], header button[disabled],
+header html input[disabled] {
+  cursor: default;
+}
+footer input[type=checkbox],
+footer input[type=radio], header input[type=checkbox],
+header input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+footer input[type=search], header input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+footer input[type=search]::-webkit-search-cancel-button,
+footer input[type=search]::-webkit-search-decoration, header input[type=search]::-webkit-search-cancel-button,
+header input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+footer button::-moz-focus-inner,
+footer input::-moz-focus-inner, header button::-moz-focus-inner,
+header input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+footer textarea, header textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+footer table, header table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+footer html,
+footer button,
+footer input,
+footer select,
+footer textarea, header html,
+header button,
+header input,
+header select,
+header textarea {
+  color: #222;
+}
+footer ::-moz-selection, header ::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+footer ::selection, header ::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+footer img, header img {
+  vertical-align: middle;
+}
+footer fieldset, header fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+footer textarea, header textarea {
+  resize: vertical;
+}
+footer .chromeframe, header .chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 /*# sourceMappingURL=style.css.map */

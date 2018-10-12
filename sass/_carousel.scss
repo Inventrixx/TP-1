@@ -1,4 +1,4 @@
-$font-principal: 'IBM Plex Mono', monospace;
+$font-text: 'IBM Plex Mono', monospace;
 
 .carousel {
   display: flex;
@@ -34,7 +34,7 @@ $font-principal: 'IBM Plex Mono', monospace;
       .text-overlay {
         padding: 5px;
         color: white;
-        font-family: $font-principal;
+        font-family: $font-text;
         font-size: 15px;
         position: absolute;
         bottom: 0;
