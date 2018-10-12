@@ -72,7 +72,7 @@ section {
     height: auto;
     width: 23%;
     margin-left: 15px;
-    
+
   .title {
     background-color: lightpink;
     height: 30px;
@@ -83,7 +83,7 @@ section {
     p {
       margin:3px;
     }
-      
+
     }
   .main-content {
     width: 100%;
@@ -109,8 +109,8 @@ section {
         }
       }
     }
-  
-  
+
+
   }
 
 .video-coments {
@@ -157,10 +157,10 @@ p {
     width: 100%;
     border-radius: 40px;
   }
-  
+
   .text {
     margin-left: 40px;
-    color: rgb(150, 149, 149);  
+    color: rgb(150, 149, 149);
     position: relative;
     .icons {
       position: absolute;
@@ -184,7 +184,7 @@ p {
     font-family: $font-text;
     color: black;
   }
-  
+
   a {
     display: inline-block;
     margin-top: 10px;
@@ -230,14 +230,15 @@ p {
         font-family: $font-text;
       }
       .text {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
         .date {
           width: 40%;
+          p {
+            margin: 0;
+          }
         }
         .icons {
-          position: absolute;
-          left: 200px;
-          top: 5px;
           span {
             font-family: $font-text;
           }
@@ -248,7 +249,6 @@ p {
       }
         h3 {
           color: black;
-          margin: 0;
         }
       }
       .boton-mobile {
@@ -266,7 +266,5 @@ p {
         .second-article {
           display: none;
         }
-        
+
       }
-    
-  
