@@ -4,7 +4,6 @@ footer {
 footer .footer-cont {
   display: flex;
   justify-content: space-around;
-  color: #808080;
   border-bottom: #808080 solid 1px;
   width: 88%;
   margin: auto;
@@ -16,6 +15,8 @@ footer .footer-cont .footer-icon {
 }
 footer .footer-cont .footer-icon i {
   padding-right: 8px;
+  text-decoration: none;
+  color: #808080;
 }
 
 .footer-icon2 {
@@ -40,6 +41,10 @@ footer .footer-cont .footer-icon i {
   }
   footer .footer-icon2 {
     display: flex;
+  }
+  footer .footer-icon2 a {
+    color: #808080;
+    text-decoration: none;
   }
 
   .icon-arrow {
