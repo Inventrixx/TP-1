@@ -460,15 +460,14 @@ p {
     font-family: "IBM Plex Mono", monospace;
   }
   section .box-mobile .text {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   section .box-mobile .text .date {
     width: 40%;
   }
-  section .box-mobile .text .icons {
-    position: absolute;
-    left: 200px;
-    top: 5px;
+  section .box-mobile .text .date p {
+    margin: 0;
   }
   section .box-mobile .text .icons span {
     font-family: "IBM Plex Mono", monospace;
@@ -478,7 +477,6 @@ p {
   }
   section .box-mobile h3 {
     color: black;
-    margin: 0;
   }
   section .boton-mobile {
     display: inline-block;
