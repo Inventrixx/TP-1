@@ -11,6 +11,7 @@ footer {
         width: 88%;
         margin: auto;
         padding: 1em;
+        margin-top: 3em;
         .footer-icon {
             display: flex;
             padding-bottom: 1em;
@@ -23,12 +24,24 @@ footer {
     }
 }
 
+p {
+    color: $color-font;    
+}
+p:hover {
+    cursor: context-menu;     
+}
+   
+
 .footer-icon2 {
     display: none;
 }
 
 .icon-arrow {
     display: none;
+}
+
+.vacuum {
+    margin-top:2em; // esto es para crea espacio para que la línea inferior se pueda observar.
 }
 
 
@@ -56,7 +69,7 @@ footer {
 
     }
     .icon-arrow {
-        display: inline;
+        display: block;
         color: $title-color;
         position: absolute;
         background-color: white;

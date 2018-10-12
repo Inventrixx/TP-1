@@ -1,0 +1,503 @@
+@charset "UTF-8";
+header nav {
+  display: block;
+}
+header nav .title {
+  background-color: white;
+  font-family: "Indie Flower", cursive;
+  color: #fd8662;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+header nav .navigation-desktop {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  padding-top: 1.675em;
+  padding-bottom: 0.8em;
+}
+header nav .dropdown-container {
+  position: relative;
+}
+header nav .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  width: 7.6rem;
+  height: 7rem;
+}
+header nav .dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.n-mobile {
+  display: none;
+}
+
+.dropdown-container a:hover {
+  color: #fd8662;
+  cursor: context-menu;
+}
+.dropdown-container li {
+  padding-top: 1.1364em;
+}
+
+.navigation-desktop .link {
+  padding: 0.5rem 1rem;
+}
+.navigation-desktop:hover {
+  cursor: context-menu;
+}
+
+.navigation-item1 a {
+  color: #fd8662;
+}
+
+@media (max-width: 800px) {
+  .body {
+    display: block;
+  }
+
+  .n-desktop {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 53px;
+    line-height: 71px;
+  }
+
+  .n-mobile {
+    width: 19em;
+    margin: auto;
+    display: block;
+    background-color: #fd8662;
+    margin-top: 1rem;
+    padding: 6px;
+    border-radius: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+  }
+  .n-mobile .dropdown-container1 {
+    position: relative;
+  }
+  .n-mobile .dropdown-container1 .dropdown-content1 {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #fd8662;
+    width: 7.6rem;
+    height: 9rem;
+  }
+  .n-mobile .dropdown-container1:hover .dropdown-content1 {
+    display: block;
+    margin: auto;
+    margin-left: 30%;
+    color: white;
+  }
+}
+.dropdown-item1 {
+  padding-top: 1em;
+}
+
+footer {
+  font-family: "IBM Plex Mono", monospace;
+}
+footer .footer-cont {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: #808080 solid 1px;
+  width: 88%;
+  margin: auto;
+  padding: 1em;
+  margin-top: 3em;
+}
+footer .footer-cont .footer-icon {
+  display: flex;
+  padding-bottom: 1em;
+}
+footer .footer-cont .footer-icon i {
+  padding-right: 8px;
+  color: #808080;
+  text-decoration: none;
+}
+
+p {
+  color: #808080;
+}
+
+p:hover {
+  cursor: context-menu;
+}
+
+.footer-icon2 {
+  display: none;
+}
+
+.icon-arrow {
+  display: none;
+}
+
+.vacuum {
+  margin-top: 2em;
+}
+
+@media (max-width: 800px) {
+  footer .footer-cont {
+    width: 94%;
+    padding-top: 2em;
+    position: relative;
+  }
+  footer .footer-icon {
+    padding-right: 41px;
+  }
+  footer .footer-icon p {
+    display: none;
+  }
+  footer .footer-icon2 {
+    display: flex;
+  }
+  footer .footer-icon2 a {
+    color: #808080;
+    text-decoration: none;
+  }
+
+  .icon-arrow {
+    display: block;
+    color: #fd8662;
+    position: absolute;
+    background-color: white;
+    margin-top: 33px;
+  }
+  .icon-arrow i {
+    font-size: 30px;
+  }
+}
+.fruit-container {
+  width: 100%;
+  height: auto;
+}
+.fruit-container img {
+  width: 100%;
+}
+
+.general {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.general .small-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  width: 39%;
+}
+.general .small-text .article-post {
+  width: 12em;
+  display: flex;
+  justify-content: space-between;
+}
+.general .small-text .article-post p {
+  font-family: "IBM Plex Mono", monospace;
+  color: black;
+  font-weight: bold;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.imagenes .imgbox {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+.imagenes .imgbox .plato-photo {
+  width: 86%;
+  height: auto;
+  margin: 0;
+}
+.imagenes .imgbox .plato-photo img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.iconos {
+  padding-right: 2rem;
+}
+.iconos .socialmedia {
+  padding-bottom: 1rem;
+}
+
+.facebook-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #0040ff;
+}
+.facebook-img i {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+}
+.facebook-img ihover {
+  cursor: pointer;
+}
+
+.Twitter-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #0099ff;
+}
+.Twitter-img i {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+}
+
+.google-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #ff1a1a;
+}
+.google-img i {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+}
+
+.instagram-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #993300;
+}
+.instagram-img i {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+}
+
+.pinterest-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #cc0000;
+}
+.pinterest-img i {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+}
+
+.article-post2 .grey-one {
+  color: #808080;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.text-container {
+  width: 46%;
+  height: auto;
+  margin-left: 28%;
+}
+.text-container .text1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.text-container .text1 p {
+  font-family: "IBM Plex Mono", monospace;
+  color: #808080;
+}
+
+.icons {
+  color: #808080;
+}
+.icons .numbers {
+  font-family: "IBM Plex Mono", monospace;
+  padding-right: 2em;
+}
+
+.text-article {
+  margin-top: 2em;
+}
+.text-article h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  margin-left: 1em;
+  font-size: 25px;
+}
+.text-article .color {
+  margin-top: 1em;
+  font-family: "IBM Plex Mono", monospace;
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.receta {
+  width: 90%;
+  margin-top: 2em;
+  padding-left: 2em;
+  border-left: 2px solid #fd8662;
+}
+.receta p {
+  font-family: "IBM Plex Mono", monospace;
+  color: black;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.receta .name {
+  margin-top: 2em;
+}
+
+.ingredients {
+  margin-top: 2em;
+}
+.ingredients li {
+  color: black;
+  list-style-type: none;
+}
+.ingredients li:before {
+  content: "•";
+  color: #fd8662;
+  padding-right: 0.5em;
+}
+.ingredients span {
+  font-family: "IBM Plex Mono", monospace;
+  color: #808080;
+  line-height: 3;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .fruit-container {
+    margin-top: 1em;
+  }
+
+  .general {
+    width: 90%;
+  }
+  .general .small-text {
+    display: block;
+  }
+  .general .small-text .article-post2 {
+    margin-top: 1em;
+    width: 10em;
+  }
+
+  .imagenes {
+    display: block;
+    margin-top: 2em;
+    padding-top: 0;
+  }
+  .imagenes .imgbox {
+    display: block;
+  }
+  .imagenes .imgbox .iconos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 89%;
+    margin: auto;
+  }
+  .imagenes .imgbox .plato-photo {
+    width: 100%;
+  }
+
+  .facebook-img {
+    width: 34px;
+    height: 34px;
+    background-color: #0040ff;
+  }
+  .facebook-img i {
+    font-size: 26px;
+    margin-top: 3px;
+  }
+
+  .Twitter-img {
+    width: 34px;
+    height: 34px;
+    background-color: #0099ff;
+  }
+  .Twitter-img i {
+    font-size: 26px;
+    margin-top: 3px;
+  }
+
+  .google-img {
+    width: 34px;
+    height: 34px;
+    background-color: #ff1a1a;
+  }
+  .google-img i {
+    font-size: 26px;
+    margin-top: 3px;
+  }
+
+  .instagram-img {
+    width: 34px;
+    height: 34px;
+    background-color: #993300;
+  }
+  .instagram-img i {
+    font-size: 26px;
+    margin-top: 3px;
+  }
+
+  .pinterest-img {
+    width: 34px;
+    height: 34px;
+    background-color: #cc0000;
+  }
+  .pinterest-img i {
+    font-size: 26px;
+    margin-top: 3px;
+  }
+
+  .text-container {
+    width: 89%;
+    height: auto;
+    margin: auto;
+  }
+  .text-container .text1 .text-flex {
+    font-size: 14px;
+    display: inherit;
+  }
+
+  .icons {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    width: 31%;
+  }
+  .icons i .numbers {
+    padding-right: 0;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

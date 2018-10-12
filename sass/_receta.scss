@@ -1,0 +1,335 @@
+@import 'header.scss';
+@import 'footer.scss';
+
+
+@mixin box-icon {
+    width: 22px;
+    height: 22px;  
+    border-radius: 20px;  
+    position: relative;
+}
+
+@mixin Reficon {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 2px;
+    color: white;
+        
+}
+
+@mixin box-iconq {
+    width: 34px;
+    height: 34px;
+}
+
+@mixin iconquery {
+    font-size: 26px;
+    margin-top: 3px;
+}
+
+$color-font: #808080;
+$title-color: #fd8662;
+$font-text: "IBM Plex Mono", monospace;
+$font-title: "Indie Flower", cursive;
+
+
+.fruit-container {
+    width: 100%;
+    height: auto;
+    img {
+        width: 100%;
+    }
+}
+
+.general {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    .small-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        width: 39%;
+        .article-post {
+            width: 12em;
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-family: $font-text;
+                color: black;
+                font-weight: bold
+            }
+        }
+        
+    }
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    .imgbox {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        .plato-photo {
+            width: 86%;
+            height: auto;
+            margin: 0;
+            img {
+                width: 100%;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+    
+.iconos {
+    padding-right: 2rem;
+    .socialmedia {
+        padding-bottom: 1rem;
+
+    }
+}
+
+.facebook-img {
+    @include box-icon;
+    background-color: #0040ff;
+    i {
+        @include Reficon;
+
+        &hover {
+            cursor: pointer;
+        }
+        
+    }
+}
+ 
+.Twitter-img {
+    @include box-icon;
+    background-color: #0099ff;
+    i {
+        @include Reficon;
+    }
+}
+
+.google-img {
+    @include box-icon;
+    background-color: #ff1a1a;
+    i {
+        @include Reficon;
+    }
+}
+
+.instagram-img {
+    @include box-icon;
+    background-color: #993300;
+    i {
+        @include Reficon;
+    }
+}
+
+.pinterest-img {
+    @include box-icon;
+    background-color: #cc0000;
+    i {
+        @include Reficon;
+    }
+}
+
+
+.article-post2 { // se hizo un div aparte pues al momento de pasarlo a mobile poder bajar este elemento.
+    .grey-one {     
+        color: $color-font;
+        font-family: $font-text;
+    }
+}
+ 
+.text-container {
+    width: 46%;
+    height: auto;
+    margin-left: 28%;
+    .text1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        p {
+            font-family: $font-text;
+            color: $color-font;
+        }
+    }
+}
+
+.icons {
+    color: $color-font;
+    .numbers {
+        font-family: $font-text;
+        padding-right: 2em;
+    }
+}
+
+.text-article {
+    margin-top: 2em;
+    h3 {
+        font-family: $font-text;
+        font-weight: bold;
+        margin-left: 1em;
+        font-size: 25px;
+        
+    }
+    .color {
+        margin-top: 1em;
+        font-family: $font-text;
+        color: $color-font;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    
+}
+
+.receta {
+    width: 90%;
+    margin-top: 2em;
+    padding-left: 2em;
+    border-left: 2px solid $title-color;
+    p {
+        font-family: $font-text;
+        color: black;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .name {
+        margin-top: 2em;
+
+    }
+}
+
+.ingredients {
+    margin-top: 2em;
+    li {
+        color: black;
+        list-style-type: none;
+    }
+    li:before {
+        content: '\2022';
+        color:$title-color;
+        padding-right: 0.5em;
+    }
+    span {
+        font-family: $font-text;
+        color: $color-font;
+        line-height: 3;
+        font-size: 14px;
+        
+    }
+    
+}
+
+@media (max-width: 800px) { // tener en cuenta siempre hacer el mobile primero
+    .fruit-container {
+        margin-top: 1em;
+    }
+    .general {
+        width: 90%;
+        .small-text {
+            display: block;
+            .article-post2 {
+                margin-top: 1em;
+                width: 10em;
+            }
+        }
+    }
+
+    .imagenes {
+        display: block;
+        margin-top: 2em;
+        padding-top: 0;
+        .imgbox {
+            display: block;
+            .iconos {
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                width: 89%;
+                margin: auto;
+            }
+            .plato-photo {
+                    width: 100%
+                                       
+            }
+            
+        }
+    }
+ 
+    
+    .facebook-img {
+        @include box-iconq;
+        background-color: #0040ff;
+        i {
+            @include iconquery;
+    
+                   
+        }
+    }
+     
+    .Twitter-img {
+        @include box-iconq;
+        background-color: #0099ff;
+        i {
+            @include iconquery;
+        }
+    }
+    
+    .google-img {
+        @include box-iconq;
+        background-color: #ff1a1a;
+        i {
+            @include iconquery;
+        }
+    }
+    
+    .instagram-img {
+        @include box-iconq;
+        background-color: #993300;
+        i {
+            @include iconquery;
+        }
+    }
+    
+    .pinterest-img {
+        @include box-iconq;
+        background-color: #cc0000;
+        i {
+            @include iconquery;
+        }
+    }
+
+    .text-container {
+        width: 89%;
+        height: auto;
+        margin: auto;
+        .text1 {
+            .text-flex {
+                font-size: 14px;
+                display: inherit;
+            }           
+        }
+    }
+
+    .icons {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+        width: 31%;
+        i {
+            .numbers {
+                padding-right: 0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+  
