@@ -76,7 +76,15 @@ p:hover {
         margin-top: 33px;
         i {
             font-size: 30px;
+            
         }
+        a:visited {
+            color: $title-color;
+        }
+    }
+
+    .vacuum {
+        margin-top:2em;
     }
 }
 

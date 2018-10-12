@@ -3,7 +3,7 @@
 @import 'carousel.scss';
 @import 'main-article.scss';
 
-footer, header {
+footer, header { //colocamos el reset en el style pues generaba conflictos en el diseño del aside, header y footer.
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

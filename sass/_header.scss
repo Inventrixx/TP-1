@@ -33,7 +33,7 @@ header nav {
             width: 100%;
             background-color: white;
             width: 7.6rem;
-            height: 7rem;
+            height: 9rem;
         }
         &:hover .dropdown-content {
             display: block;
@@ -73,6 +73,8 @@ header nav {
 .navigation-item1 {
     a {
         color: $title-color;
+        text-decoration: none;
+        
     }
 }
 
@@ -97,6 +99,7 @@ header nav {
         display: block;
         background-color: #fd8662;
         margin-top: 1rem;
+        margin-bottom: 2rem;
         padding: 6px;
         border-radius: 10px;
         font-family: $font-text;
@@ -109,7 +112,7 @@ header nav {
                 z-index: 100;
                 background-color: $title-color;
                 width: 7.6rem;
-                height: 9rem;
+                height: 10rem;
             }
             &:hover .dropdown-content1 {
                 display: block;

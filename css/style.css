@@ -28,7 +28,7 @@ header nav .dropdown-container .dropdown-content {
   width: 100%;
   background-color: white;
   width: 7.6rem;
-  height: 7rem;
+  height: 9rem;
 }
 header nav .dropdown-container:hover .dropdown-content {
   display: block;
@@ -55,6 +55,7 @@ header nav .dropdown-container:hover .dropdown-content {
 
 .navigation-item1 a {
   color: #fd8662;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -77,6 +78,7 @@ header nav .dropdown-container:hover .dropdown-content {
     display: block;
     background-color: #fd8662;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     padding: 6px;
     border-radius: 10px;
     font-family: "IBM Plex Mono", monospace;
@@ -91,7 +93,7 @@ header nav .dropdown-container:hover .dropdown-content {
     z-index: 100;
     background-color: #fd8662;
     width: 7.6rem;
-    height: 9rem;
+    height: 10rem;
   }
   .n-mobile .dropdown-container1:hover .dropdown-content1 {
     display: block;
@@ -114,6 +116,7 @@ footer .footer-cont {
   width: 88%;
   margin: auto;
   padding: 1em;
+  margin-top: 3em;
 }
 footer .footer-cont .footer-icon {
   display: flex;
@@ -125,12 +128,24 @@ footer .footer-cont .footer-icon i {
   text-decoration: none;
 }
 
+p {
+  color: #808080;
+}
+
+p:hover {
+  cursor: context-menu;
+}
+
 .footer-icon2 {
   display: none;
 }
 
 .icon-arrow {
   display: none;
+}
+
+.vacuum {
+  margin-top: 2em;
 }
 
 @media (max-width: 800px) {
@@ -154,7 +169,7 @@ footer .footer-cont .footer-icon i {
   }
 
   .icon-arrow {
-    display: inline;
+    display: block;
     color: #fd8662;
     position: absolute;
     background-color: white;
@@ -162,6 +177,13 @@ footer .footer-cont .footer-icon i {
   }
   .icon-arrow i {
     font-size: 30px;
+  }
+  .icon-arrow a:visited {
+    color: #fd8662;
+  }
+
+  .vacuum {
+    margin-top: 2em;
   }
 }
 .carousel {
