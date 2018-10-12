@@ -1,0 +1,162 @@
+@mixin box-icon {
+    width: 22px;
+    height: 22px;  
+    border-radius: 20px;  
+    position: relative;
+}
+
+@mixin Reficon {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 2px;
+    color: white;
+        
+}
+
+@mixin box-iconq {
+    width: 34px;
+    height: 34px;
+}
+
+@mixin iconquery {
+    font-size: 26px;
+    margin-top: 3px;
+}
+
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    .imgbox {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        .plato-photo {
+            width: 86%;
+            height: auto;
+            img {
+                width: 100%;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+    
+.iconos {
+    padding-right: 2rem;
+    .socialmedia {
+        padding-bottom: 2rem;
+
+    }
+}
+
+.facebook-img {
+    @include box-icon;
+    background-color: #0040ff;
+    i {
+        @include Reficon;
+
+        &hover {
+            cursor: pointer;
+        }
+        
+    }
+}
+ 
+.Twitter-img {
+    @include box-icon;
+    background-color: #0099ff;
+    i {
+        @include Reficon;
+    }
+}
+
+.google-img {
+    @include box-icon;
+    background-color: #ff1a1a;
+    i {
+        @include Reficon;
+    }
+}
+
+.instagram-img {
+    @include box-icon;
+    background-color: #993300;
+    i {
+        @include Reficon;
+    }
+}
+
+.pinterest-img {
+    @include box-icon;
+    background-color: #cc0000;
+    i {
+        @include Reficon;
+    }
+}
+
+@media (max-width: 800px) {
+    .imagenes {
+        display: block;
+        .imgbox {
+            display: block;
+            .iconos {
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                width: 89%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.plato-photo {
+    margin: auto;
+}
+
+.facebook-img {
+    @include box-iconq;
+    background-color: #0040ff;
+    i {
+        @include iconquery;
+
+               
+    }
+}
+ 
+.Twitter-img {
+    @include box-iconq;
+    background-color: #0099ff;
+    i {
+        @include iconquery;
+    }
+}
+
+.google-img {
+    @include box-iconq;
+    background-color: #ff1a1a;
+    i {
+        @include iconquery;
+    }
+}
+
+.instagram-img {
+    @include box-iconq;
+    background-color: #993300;
+    i {
+        @include iconquery;
+    }
+}
+
+.pinterest-img {
+    @include box-iconq;
+    background-color: #cc0000;
+    i {
+        @include iconquery;
+    }
+}
+
+
